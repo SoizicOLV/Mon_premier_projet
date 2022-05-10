@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset=”utf-8″>
+    <title>Cats</title>
+</head>
+<div class="main">
+
+    <body>
+        <nav id="menu">
+            <div class="brd">
+                <figure>
+                    <img src="img/cat.png" class="cat" alt="cat">
+                    <figcaption>
+                        <h2>MY PET</h2>
+                    </figcaption>
+                    </img>
+                </figure>
+                <h5>Vous souhaitez :</h5>
+                <ul>
+                    <li><a href="">Changer la photo de Profil</a></li>
+                    <li><a href="">Modifier sa date d'expédition</a></li>
+                    <li><a href="">Modifier son menu</a></li>
+                    <li><a href="">Modifier son Profil</a></li>
+                    <li><a href="">Suspendre les livraisons</a></li>
+                    <li><a href="">Contacter le service client</a></li>
+                </ul>
+        </nav>
+
+        <section>
+            <h2>Prochaine expédition</h2>
+
+            <div class="exp">
+                <div class=box><img src="img/box.png" alt="box"></img></div>
+                <div>
+                    <h4>2 mois d'alimentation pour {FNAME}</h4>
+                    <ul>
+                        <li>- 7.2kg de croquettes saines et naturelles</li>
+                        <li>- 40 pochons d'effilochés</li>
+                    </ul>
+                    <h3>Prix totale pour 2 mois : 82,40€ (1,37€ : jour)</h3>
+                    <p class="small">Date de facturation et préparation : 15/11/2021<br>
+                        Livraison estimée 16/11/2021 ++ 199/11/2021</p>
+                    <p><a class="link" href="">Modifier sa date d'expédition</a></p>
+                </div>
+            </div>
+
+            <h2>Le menu de {FNAME}</h2>
+
+            <div class="mn">
+                <div class="food"><img src="img/food.png" alt="petfood"></img></div>
+                <div>
+                    <p>Croquettes (poulets et petits légumes)...<em>35g/jour</em><br>
+                        Effilochés (plusieurs saveurs)...<em>1 pochon/jour</em><br>
+                        Prix total par jour...<em>1,37/jour</em>
+                    </p>
+                    <h3>Fréquence de livraison tous les 2 mois</h3>
+                    <p><a class="link" href="">Modifier le menu</a></p>
+                </div>
+            </div>
+
+            <h2>Le profil {FNAME}</h2>
+
+            <!--FORMULAIRES-->
+            <form action="monprofil.php" method="post">
+                <div class="formulaire">
+                    <p><label for="nom">Nom :</label><input type="text"></p>
+                    <p><label for="sexe">Sexe :</label><input type="text"></p>
+                    <p><label for="sterilisation">Stérilisation :</label><input type="text"></p>
+                    <p><label for="activite">Activité :</label><input type="text"></p>
+                    <p><label for="allergies">Allergies :</label><input type="text"></p>
+                    <div class="snt">
+                        <p><label for="sante">Santé :</label><input type="text"></p>
+                    </div>
+                    <p><label for="naissance">Date de naissance :</label><input type="text"></p>
+                    <p><label for="race">Race :</label><input type="text"></p>
+                    <p><label for="poids">Poids :</label><input type="text"></p>
+                    <p><label for="alimentation">Préférence alimentaire :</label>
+                        <input type="text">
+                    </p>
+                </div>
+
+            </form>
+
+            <p><a class="link" href="">Modifier son profil</a></p>
+        </section>
+    </body>
+</div>
+
+</html>
